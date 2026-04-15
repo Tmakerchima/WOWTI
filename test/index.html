@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WOWTI 测试 | 你最适合玩的职业专精</title>
+    <meta
+      name="description"
+      content="WOWTI - 10 道无厘头题目，测出你在魔兽世界里最适合的职业与专精。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section id="intro" class="card active">
+        <p class="badge">WOWTI / v1.0</p>
+        <h1>你是哪个专精天选之人？</h1>
+        <p class="lead">
+          10 道离谱问题 + 4 个奇怪选项，
+          <strong>30 秒</strong>
+          测出你在艾泽拉斯最该玩的职业专精。
+        </p>
+        <ul class="feature-list">
+          <li>✅ 每题 4 个选项</li>
+          <li>✅ 包含无厘头内容</li>
+          <li>✅ 结果是职业/专精推荐</li>
+        </ul>
+        <button id="startBtn" class="btn primary">开始测试</button>
+      </section>
+
+      <section id="quiz" class="card" aria-live="polite">
+        <header class="quiz-header">
+          <p id="progressText" class="progress-text">第 1 / 10 题</p>
+          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="10">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+        </header>
+
+        <h2 id="questionTitle" class="question-title"></h2>
+        <div id="options" class="options"></div>
+      </section>
+
+      <section id="result" class="card">
+        <p class="badge">测试结果</p>
+        <h2 id="resultTitle"></h2>
+        <p id="resultSubtitle" class="result-subtitle"></p>
+        <p id="resultDesc" class="result-desc"></p>
+        <div class="result-actions">
+          <button id="restartBtn" class="btn secondary">再测一次</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Made for Azeroth · WOWTI.dev/test</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
